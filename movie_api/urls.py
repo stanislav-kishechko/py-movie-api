@@ -4,8 +4,8 @@ from rest_framework import routers
 from cinema.views import MovieView
 
 router = routers.DefaultRouter()
-router.register("movie", MovieView)
+router.register("movies", MovieView)
 
 urlpatterns = [
-    path("api/", include(router.urls)),
+    path("api/cinema/", include(router.urls)),
 ]
